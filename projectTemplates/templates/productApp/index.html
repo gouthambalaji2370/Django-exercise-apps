@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>E commerce App</title>
+    <link rel="stylesheet" href="{% static  "css/index.css" %}">
+
+</head>
+<body>
+<h1>Welcome to E-commerce App</h1>
+<div>
+    <div>
+        <img src="{% static "images/electronics.jpeg" %}">
+        <a href="/electronics">Electronics</a>
+    </div>
+
+    <div>
+        <img src="{% static "images/toys.jpeg" %}">
+        <a href="/toys">Toys</a>
+    </div>
+
+    <div>
+        <img src="{% static "images/shoes.jpeg" %}">
+        <a href="/shoes">Shoes</a>
+    </div>
+</div>
+</body>
+</html>

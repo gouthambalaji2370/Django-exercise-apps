@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Update Student Details</title>
+</head>
+<body>
+<form method="post">
+
+    FirstName:<input type="text" id="firstName" name="firstName" value="{{ student.firstName }}">
+    LastName:<input type="text" id="lastName" name="lastName" value="{{ student.lastName }}">
+    TestScore:<input type="number" id="testScore" name="testScore" value="{{ student.testScore }}" >
+    {% csrf_token %}
+    <input type="submit" value="Update">
+</form>
+
+</body>
+</html>

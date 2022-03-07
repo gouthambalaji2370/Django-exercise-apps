@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Employee Details</title>
+    <link rel="stylesheet" href="{% static  "css/employee.css" %}">
+</head>
+<body>
+<table>
+    <thead>
+    <tr>
+    <th>ID</th>
+    <th>Name</th>
+    <th>Salary</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <td>{{ id }}</td>
+        <td>{{ name }}</td>
+        <td>{{ salary }}</td>
+    </tr>
+    </tbody>
+    <img src="{% static "images/nature.jpeg" %}">
+</table>
+</body>
+</html>
